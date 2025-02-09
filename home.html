@@ -17,6 +17,30 @@
             color: white;
             text-align: center;
             padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .header-buttons {
+            display: flex;
+            gap: 20px;
+        }
+        .header-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .header-buttons a:hover {
+            background-color: #4CAF50;
+            color: white;
         }
         section {
             margin: 20px;
@@ -42,14 +66,19 @@
 
     <header>
         <h1>El Tigre</h1>
+        <div class="header-buttons">
+            <a href="https://www.youtube.com" target="_blank">Ir a YouTube</a>
+            <a href="#introduccion">Introducción</a>
+            <a href="#caracteristicas">Características</a>
+        </div>
     </header>
 
-    <section>
+    <section id="introduccion">
         <h2>Introducción</h2>
         <p>El tigre es uno de los felinos más grandes y poderosos del mundo. Su nombre científico es *Panthera tigris*, y es conocido por su pelaje a rayas, su fuerza y su agilidad. Habita principalmente en Asia, en bosques y selvas densas.</p>
     </section>
 
-    <section>
+    <section id="caracteristicas">
         <h2>Características</h2>
         <p>El tigre tiene un cuerpo robusto y musculoso, con un pelaje característico de rayas negras sobre fondo anaranjado. Sus garras y dientes son extremadamente afilados, lo que lo convierte en un excelente cazador. Los tigres tienen un oído y vista agudos, esenciales para cazar en la oscuridad.</p>
         <img src="https://via.placeholder.com/800x400.png?text=Tigre" alt="Tigre en la jungla">
