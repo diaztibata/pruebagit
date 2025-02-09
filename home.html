@@ -17,6 +17,30 @@
             color: white;
             text-align: center;
             padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .header-buttons {
+            display: flex;
+            gap: 20px;
+        }
+        .header-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .header-buttons a:hover {
+            background-color: #4CAF50;
+            color: white;
         }
         section {
             margin: 20px;
@@ -42,14 +66,19 @@
 
     <header>
         <h1>El León</h1>
+        <div class="header-buttons">
+            <a href="https://www.youtube.com" target="_blank">Ir a YouTube</a>
+            <a href="#introduccion">Introducción</a>
+            <a href="#caracteristicas">Características</a>
+        </div>
     </header>
 
-    <section>
+    <section id="introduccion">
         <h2>Introducción</h2>
         <p>El león, conocido como el "rey de la selva", es un mamífero de gran tamaño que pertenece a la familia Felidae. Es famoso por su melena y su poderío. Su nombre científico es *Panthera leo*.</p>
     </section>
 
-    <section>
+    <section id="caracteristicas">
         <h2>Características</h2>
         <p>El león tiene un cuerpo musculoso, una melena en los machos y una excelente capacidad de caza. Los leones viven en manadas, lo que los hace únicos entre los felinos. El color de su pelaje varía entre el dorado y el marrón.</p>
         <img src="https://via.placeholder.com/800x400.png?text=León" alt="León en la sabana">
